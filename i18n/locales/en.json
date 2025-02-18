@@ -1,0 +1,16 @@
+{
+  "welcome": "Welcome to",
+  "followus": "Follow us on",
+  "tagline": "Save your crucial time with our",
+  "routes": {
+    "home": "home",
+    "about": "about",
+    "form": "form"
+  },
+  "form": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Submit"
+  }
+}

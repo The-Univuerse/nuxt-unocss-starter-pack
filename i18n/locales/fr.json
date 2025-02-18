@@ -1,0 +1,16 @@
+{
+  "welcome": "Bienvenue au",
+  "followus": "Suivez-nous sur",
+  "tagline": "Économisez votre temps crucial avec notre",
+  "routes": {
+    "home": "maison",
+    "about": "à propos",
+    "form": "formulaire"
+  },
+  "form": {
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmez le mot de passe",
+    "submit": "Soumettre"
+  }
+}
