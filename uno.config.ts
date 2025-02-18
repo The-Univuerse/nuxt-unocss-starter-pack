@@ -1,6 +1,30 @@
-import { defineConfig, presetWind, presetTypography } from 'unocss'
+import {
+  defineConfig,
+  presetTypography,
+  presetWind,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 
 export default defineConfig({
-  // ...UnoCSS options
-  presets: [presetTypography(), presetWind({dark: 'media'})]
+  presets: [
+    presetTypography(),
+    presetWind({ dark: 'class' }),
+  ],
+
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup(),
+  ],
+
+  theme: {
+    colors: {
+      background: 'var(--background)',
+      secondary: 'var(--secondary)',
+      primary: 'var(--primary)',
+      accent: 'var(--accent)',
+
+    },
+  },
+
 })

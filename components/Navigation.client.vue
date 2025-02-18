@@ -59,8 +59,8 @@ const switchTheme = (value: string): void => {
 </script>
 
 <template>
-  <div class="w-full flex border-b gap-3 border-slate-200  dark:border-neutral-900 justify-between p-5">
-    <div class="flex gap-3 items-center">
+  <div class="w-full flex justify-between gap-3 border-b border-slate-200 p-5 dark:border-neutral-900">
+    <div class="flex items-center gap-3">
       <NuxtLinkLocale
         to="/"
         class="text-secondary transition duration-300 ease-in-out hover:text-neutral-400"
@@ -86,7 +86,7 @@ const switchTheme = (value: string): void => {
     <div class="flex gap-3">
       <button
         v-if="currentLang"
-        class="cursor-pointer text-secondary transition duration-300 ease-in-out hover:text-neutral-400"
+        class="text-secondary cursor-pointer transition duration-300 ease-in-out hover:text-neutral-400"
         @click="setLocale(currentLang.changeValue)"
       >
         {{ currentLang.title }}
@@ -98,7 +98,7 @@ const switchTheme = (value: string): void => {
       >
         <Icon
           name="line-md:github"
-          class="text-2xl transition duration-300 ease-in-out hover:text-neutral-400 text-secondary"
+          class="text-secondary text-2xl transition duration-300 ease-in-out hover:text-neutral-400"
         />
       </NuxtLink>
 
@@ -108,7 +108,7 @@ const switchTheme = (value: string): void => {
       >
         <Icon
           :name="currentTheme.icon"
-          class="text-2xl transition duration-300 ease-in-out hover:text-neutral-400 text-secondary"
+          class="text-secondary text-2xl transition duration-300 ease-in-out hover:text-neutral-400"
         />
       </button>
     </div>

@@ -1,9 +1,9 @@
-@import 'tailwindcss';
+html {
+  font-family: 'Roboto', serif;
+}
 
-@layer base {
-  body {
-    @apply transition-all duration-300 ease-in-out;
-  }
+body {
+  @apply transition-all duration-300 ease-in-out;
 }
 
 html {
@@ -25,26 +25,3 @@ html {
   --shimmer-width: 10px;
   --accent: #213547;
 }
-
-@theme {
-  --color-background: var(--background);
-  --color-secondary: var(--secondary);
-  --color-primary: var(--primary);
-  --color-accent: var(--accent);
-
-  --animate-shimmer: shimmer 8s infinite;
-
-  @keyframes shimmer {
-    0%,
-    90%,
-    100% {
-      background-position: calc(-100% - var(--shimmer-width)) 0;
-    }
-    30%,
-    60% {
-      background-position: calc(100% + var(--shimmer-width)) 0;
-    }
-  }
-}
-
-@custom-variant dark (&:where(.dark, .dark *));

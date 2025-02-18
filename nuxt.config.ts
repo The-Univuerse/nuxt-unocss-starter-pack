@@ -43,6 +43,7 @@ export default defineNuxtConfig({
   ],
   css: [
     '@unocss/reset/tailwind.css',
+    '~/assets/css/main.css',
   ],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
