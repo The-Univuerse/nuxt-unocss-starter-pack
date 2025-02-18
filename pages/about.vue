@@ -46,12 +46,12 @@ defineOgImageComponent('Default', {
 </script>
 
 <template>
-  <div class="text-white flex justify-center items-center w-full h-full p-5">
-    <div class="flex gap-3 flex-col text-white">
+  <div class="h-full w-full flex items-center justify-center p-5 text-white">
+    <div class="flex flex-col gap-3 text-white">
       <p
         ref="el"
         :class="{ '-translate-y-1/2': playState === 'finished' }"
-        class="text-transparent transition duration-500 ease-in-out font-extrabold text-6xl tracking-tight md:text-9xl bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text"
+        class="from-indigo-500 via-sky-500 to-emerald-500 from-10% to-90% via-30% bg-gradient-to-br bg-clip-text text-6xl text-transparent font-extrabold tracking-tight transition duration-500 ease-in-out md:text-9xl"
       >
         The Univuerse
       </p>
@@ -62,7 +62,7 @@ defineOgImageComponent('Default', {
       >
         <p
           v-if="playState === 'finished'"
-          class="text-secondary mt-3 text-lg md:text-xl text-center font-medium"
+          class="text-secondary mt-3 text-center text-lg font-medium md:text-xl"
         >
           {{ $t('tagline') }} univuerse
         </p>
@@ -74,10 +74,10 @@ defineOgImageComponent('Default', {
       >
         <div
           v-if="playState === 'finished'"
-          class="flex gap-3 justify-center mt-3"
+          class="mt-3 flex justify-center gap-3"
         >
           <button
-            class="cursor-pointer w-10 bg-neutral-400 flex items-center justify-center py-1 px-3 rounded-lg"
+            class="w-10 flex cursor-pointer items-center justify-center rounded-lg bg-neutral-400 px-3 py-1"
             @click="counter--"
           >
             <Icon
@@ -89,7 +89,7 @@ defineOgImageComponent('Default', {
           <span class="text-black dark:text-neutral-400">{{ counter }}</span>
 
           <button
-            class="cursor-pointer w-10 bg-neutral-400 flex items-center justify-center py-1 px-3 rounded-lg"
+            class="w-10 flex cursor-pointer items-center justify-center rounded-lg bg-neutral-400 px-3 py-1"
             @click="counter++"
           >
             <Icon

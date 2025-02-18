@@ -17,7 +17,7 @@ const featuresList = computed(() => {
       href: 'https://nuxt.com/',
     },
     {
-      icon: 'devicon:tailwindcss',
+      icon: 'logos:unocss',
       href: 'https://tailwindcss.com/',
     },
     {

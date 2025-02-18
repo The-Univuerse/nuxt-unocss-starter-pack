@@ -25,6 +25,15 @@ export default defineConfig({
       accent: 'var(--accent)',
 
     },
+
+    animation: {
+      keyframes: { shimmer: `{0%, 90%, 100% {background-position: calc(-100% - var(--shimmer-width)) 0} 30% 60% {background-position: calc(100% + var(--shimmer-width)) 0} }` },
+      durations: { shimmer: '8s' },
+      counts: { shimmer: 'infinite' },
+      // animation: { shimmer: 'shimmer 8s infinite' },
+
+    },
+
   },
 
 })
